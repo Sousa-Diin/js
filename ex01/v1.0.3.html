@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Objeto OO</title>
+</head>
+<body>
+    <header>
+        <h2>Gestor de tratativas</h2>
+        <img src="" alt="login">
+    </header>
+    <main>
+
+        <div class="title">
+            <h1>Alertas</h1>
+            <span>Lista de alertas tratados e monitorados.</span>
+        </div>
+        <nav class="card">
+            <input type="text" id="busca" placeholder="Digite uma placa">
+            <button onclick="alerta.search()" id="search">Buscar</button>
+            <button onclick="alerta.insert()" id="action">Ação</button>
+
+        </nav>
+        <section class="content">
+            <table border="1">
+                <thead class="thead" >
+                    <th>ID</th>
+                    <th>Tipo</th>
+                    <th>Placa</th>
+                    <th>Filial</th>
+                    <th>Horario</th>
+                    <th>Action</th>
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td>1245</td>
+                        <td>Ausência</td>
+                        <td>ETS4512</td>
+                        <td>Aracruz</td>
+                        <td>15:53</td>
+                        <td>
+                            <img src="img/edit.png" alt="imagem de editar" onclick="alerta.edit()">
+                            <img src="img/delete.png" alt="imagem de apager" onclick="alerta.clear()">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>1245</td>
+                        <td>Ausência</td>
+                        <td>ETS4512</td>
+                        <td>Aracruz</td>
+                        <td>15:53</td>
+                        <td>
+                            <img src="img/edit.png" alt="imagem de editar" onclick="alerta.edit()">
+                            <img src="img/delete.png" alt="imagem de apager" onclick="alerta.clear()">
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>1245</td>
+                        <td>Sonolência N1</td>
+                        <td>ETS4512</td>
+                        <td>Aracruz</td>
+                        <td>15:53</td>
+                        <td>
+                            <img src="img/edit.png" alt="imagem de editar" onclick="alerta.edit()">
+                            <img src="img/delete.png" alt="imagem de apager" onclick="alerta.clear()">
+                            <input type="checkbox" name="" id="status">
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </section>
+        
+        
+    </main>
+    <footer>SysTrat v1.0.3</footer>
+    <script src="script1.js"></script>
+</body>
+</html>
