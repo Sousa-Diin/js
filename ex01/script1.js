@@ -5,6 +5,7 @@ class Alerta {
         this.filial = '';
         this.hour = '00:00';
         this.auditoria = false;
+        
     }
 
     insert(){
